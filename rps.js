@@ -21,6 +21,8 @@ function playGame() {
 
         // Determine the winner based on the choices
         if (humanChoice === computerChoice) {
+            humanScore++;
+            computerScore++;
             return "It's a tie!";
         } else if (
             (humanChoice === "rock" && computerChoice === "scissors") ||

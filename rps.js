@@ -6,12 +6,11 @@ function playGame() {
         let humanChoice;
         const validChoices = ["rock", "paper", "scissors"];
 
-        // Continue prompting until a valid input is provided
         while (true) {
             humanChoice = prompt("Choose rock, paper, or scissors:").toLowerCase();
 
             if (validChoices.includes(humanChoice)) {
-                break; // Exit the loop if the input is valid
+                break;
             } else {
                 alert("Invalid choice! Please enter rock, paper, or scissors.");
             }
@@ -19,7 +18,6 @@ function playGame() {
 
         const computerChoice = getComputerChoice();
 
-        // Determine the winner based on the choices
         if (humanChoice === computerChoice) {
             humanScore++;
             computerScore++;
